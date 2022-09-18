@@ -1,0 +1,1339 @@
+@font-face {
+    font-family: myFont;
+    src: url(../webfonts/ArbFONTS-URW-DIN-Arabic.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+:root {
+    --mainColor : #00C6DD;
+    --navLinksColor : #3C4043;
+    --btnLanguage : #4EC4BC;
+    --footerBackgroundColor : #f5fdfe;
+    --pageTitleColor : #3C4043;
+}
+body {
+    font-family: myFont;
+    direction: rtl;
+    /* width: 1920px; */
+}
+/* img {
+    width: 100%;
+} */
+
+/* Start Navbar */
+nav.navbar {
+    padding: 0 180px;
+}
+.navbar .navbar-nav .nav-link {
+    color: var(--navLinksColor);
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--mainColor);
+    border-bottom: 3px solid var(--mainColor);
+    border-radius: 3px;
+}
+.navbar-nav .nav-item .btn {
+    color: var(--btnLanguage);
+    border-color: var(--btnLanguage);
+    border-radius: 0px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+.navbar-nav .nav-item .btn:hover,
+.navbar-nav .nav-item .btn.active {
+    color: white;
+    background-color: var(--btnLanguage);
+}
+.navbar .navbar-toggler {
+    color: var(--mainColor);
+    font-size: 25px;
+    border-color: var(--mainColor);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-brand {
+    margin-left: 3rem;
+}
+.navbar .language {
+    margin-right: 3rem;
+}
+/* End Navbar */
+
+/* Start Header */
+.header {
+    padding: 0 180px;
+    margin: 20px 0;
+    background-color: #fffbfc;
+}
+.header .content p.title {
+    font-size: 66px;
+    font-weight: bold;
+    line-height: 100px;
+}
+.header .content p.title span {
+    color: #FF78A0;
+}
+.header .content img {
+    width: fit-content;
+    height: fit-content;
+}
+.header .content p.article {
+    font-size: 22px;
+}
+.header .content ul.list-unstyled li .fa-square-check {
+    width: 30px;
+    height: 30px;
+    color: #33D396;
+}
+.header .content ul.list-unstyled li span {
+    font-size: 22px;
+}
+.header .content .btn-home {
+    font-size: 26px;
+    background-color: var(--mainColor);
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+}
+.header .content .btn-home:hover {
+    background-color: white;
+    border-color: var(--mainColor);
+    color: var(--mainColor);
+}
+.header .content .btn-video {
+    font-size: 26px;
+    padding: 18px;
+}
+.header .home-image {
+    position: relative;
+}
+.header .home-image .parent-image {
+    width: fit-content;
+    /* height: fit-content; */
+}
+.header .home-image .child-image {
+    width: fit-content;
+    /* height: fit-content; */
+    position: absolute;
+    top: -10px;
+    left: 15%;
+}
+.header .home-image .cap-image {
+    width: fit-content;
+    /* height: fit-content; */
+    position: absolute;
+    top: 20%;
+    right: 30%;
+}
+.header .home-image .tophome-image {
+    width: fit-content;
+    /* height: fit-content; */
+    position: absolute;
+    top: 15px;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+.header .content .fa-square-check {
+    padding-left: 0.5rem;
+}
+.header .btn-video img {
+    padding-left: 1rem;
+}
+/* End Header */
+
+/* Start About Section */
+.about {
+    padding: 0 180px;
+    margin: 25px 0;
+}
+.about .content p.title {
+    font-size: 45px;
+    font-weight: bold;
+}
+.about .content p.article {
+    font-size: 22px;
+}
+.about .about-image {
+    position: relative;
+}
+.about .about-image .parent-image {
+    width: fit-content;
+    /* height: fit-content; */
+}
+.about .about-image .child-image {
+    width: fit-content;
+    /* height: fit-content; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about .about-image .circle-image {
+    width: fit-content;
+    /* height: fit-content; */
+    position: absolute;
+    bottom: 0;
+    right: -20%;
+}
+/* End About Section */
+
+/* Start Course Section */
+.courses {
+    padding: 0 180px;
+    margin: 20px 0;
+}
+.courses .content p.title {
+    font-size: 45px;
+    font-weight: bold;
+}
+.courses .course {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.courses .course:hover {
+    box-shadow: none;
+    border: var(--mainColor) 1px solid;
+}
+.courses .course .course-body:hover .course-image img {
+    filter: brightness(80%);
+}
+.courses .course .course-title a{
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+.courses .course .course-description {
+    height: 93px;
+    font-size: 22px;
+    overflow: hidden;
+}
+.courses .course .course-details p {
+    font-size: 20px;
+}
+.courses .course .course-details .fa-user-graduate {
+    color: #EA6036;
+    width: 29px;
+    height: 24px;
+}
+.courses .course .course-details .fa-clock {
+    color: #FFC022;
+    width: 29px;
+    height: 24px;
+}
+.courses .course .course-details .fa-earth-africa {
+    color: #33D396;
+    width: 29px;
+    height: 24px;
+}
+.course .course-body .course-details p {
+    padding-left: 1rem;
+}
+.course .course-body .course-details .fa-user-graduate,
+.course .course-body .course-details .fa-user-graduate,
+.course .course-body .course-details .fa-user-graduate {
+    padding-left: 0.5rem;
+}
+/* End Course Section */
+
+/* Start Facts Section */
+.facts {
+    padding: 0 180px;
+    margin: 20px 0;
+    background-image: url('../img/facts.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.facts .content p.title {
+    font-size: 45px;
+}
+.facts .card {
+    font-size: 35px;
+    position: relative;
+    border: 6px solid #ea6036;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+}
+.facts .card .cardnumber {
+    font-size: 75px;
+    font-weight: bold;
+}
+.facts .card .cardicon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ea6036;
+    padding: 10px;
+    border-radius: 50%;
+}
+/* End Facts Section */
+
+/* Start Accomplishments Section */
+.accomplishments {
+    padding: 0 180px;
+    margin: 20px 0;
+}
+.accomplishments .content p.title {
+    font-size: 45px;
+    font-weight: bold;
+}
+.accomplishments .content p.article {
+    font-size: 22px;
+}
+/* End Accomplishments Section */
+
+/* Start Footer */
+.footer {
+    padding: 0 180px;
+    background-color: var(--footerBackgroundColor);
+}
+.footer h5 {
+    font-size: 28px;
+    font-weight: bold;
+}
+.footer .links a {
+    color: var(--navLinksColor);
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer .links a:hover {
+    color: var(--mainColor);
+}
+.footer .links p {
+    font-size: 20px;
+}
+.footer .fa-phone,
+.footer .fa-location-dot,
+.footer .fa-envelope-open-text {
+    margin-left: 1rem;
+}
+.footer img {
+    padding-left: 1rem;
+}
+.copyright {
+    padding: 0 180px;
+    background-color: var(--mainColor);
+}
+.copyright .footerlogo {
+    height: 60px;
+}
+.copyright .text-light {
+    font-size: 22px;
+}
+.copyright .d-flex {
+    padding-left: 1rem;
+}
+.copyright .d-flex a img {
+    padding-right: 1rem;
+}
+/* End Footer */
+
+/* Start About Page */
+.about .about-image .center-image {
+    width: fit-content;
+    /* height: fit-content; */
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+/* End About Page */
+
+/* Start Team Page */
+.team {
+    padding: 0 180px;
+    margin: 20px 0;
+}
+.team .content p.title {
+    font-size: 45px;
+    font-weight: bold;
+}
+.team .member {
+    border: none;
+}
+.team .member .member-image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.team .member .member-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.team .member .member-title p.text-muted {
+    font-size: 18px;
+    font-weight: 600;
+}
+/* End Team Page */
+
+/* Start Contact Page */
+.contact {
+    padding: 0 180px;
+    margin: 20px 0;
+}
+.contact .content p.title {
+    font-size: 45px;
+    font-weight: bold;
+}
+.contact .contact-image {
+    position: relative;
+}
+.contact .contact-image .parent-image {
+    width: fit-content;
+    /* height: fit-content; */
+}
+.contact .contact-image .child-image {
+    width: fit-content;
+    /* height: fit-content; */
+    position: absolute;
+    top: 0;
+    right: 11px;
+    opacity: 0.8;
+}
+.contact .contact-image .center-text {
+    font-size: 28px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.contact .contact-image .center-text p.title {
+    font-size: 50px;
+}
+
+/* Forms */
+form .btn {
+    font-size: 26px;
+    border-radius: 6px;
+    background-color: var(--mainColor);
+    color: white;
+    padding: 12px 38px;
+}
+form .btn:hover {
+    background-color: white;
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+form .form-control {
+    font-size: 28px;
+    border-color: var(--mainColor);
+    border-radius: 0px;
+    padding: 20px;
+}
+form .form-control:focus {
+    box-shadow:0 0 0 2px var(--btnLanguage)
+}
+/* Forms */
+
+/* End Contact Page */
+
+/* Start Course Details Page */
+.courses .course-content h4 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.courses .content .title img {
+    margin-right: 3rem;
+}
+.courses .course-content .separetor {
+    width: 186px;
+    height: 8px;
+    background-color: #FF78A0;
+    border-radius: 4px;
+}
+.courses .points ul li {
+    font-size: 22px;
+    margin-top: 25px;
+}
+.courses .course .course-body .course-details .list-group-flush li .fa-user-graduate,
+.courses .course .course-body .course-details .list-group-flush li .fa-clock,
+.courses .course .course-body .course-details .list-group-flush li .fa-earth-africa {
+    padding-left: 3rem;
+}
+.courses .course .course-body .course-details .list-group-flush li:nth-child(1) span {
+    padding-right: 3rem;
+    margin-right: 3rem;
+}
+.courses .course .course-body .course-details .list-group-flush li:nth-child(2) span {
+    padding-right: 3rem;
+    margin-right: 0.25rem;
+}
+.courses .course .course-body .course-details .list-group-flush li:nth-child(3) span {
+    margin-right: 3rem;
+}
+.courses .points .fa-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #7D8083;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+/* End Course Details Page */
+
+/* Start Gallary Page */
+.gallary {
+    padding: 0 180px;
+    margin: 20px 0;
+}
+.gallary .content p.title {
+    font-size: 45px;
+    font-weight: bold;
+}
+.gallary .gallary-image {
+    border-top: 6px solid #FF78A0;
+    position: relative;
+}
+.gallary .gallary-image .parent-image {
+    width: 100%;
+    /* height: fit-content; */
+}
+.gallary .gallary-image .child-image {
+    width: 100%;
+    /* height: fit-content; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gallary .gallary-image .gallary-one {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 526px;
+    left: 246px;
+    cursor: pointer;
+}
+.gallary .gallary-image .gallary-two {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 526px;
+    left: 582px;
+    cursor: pointer;
+}
+.gallary .gallary-image .gallary-three {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 526px;
+    right: 504px;
+    cursor: pointer;
+}
+.gallary .gallary-image .gallary-four {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 526px;
+    right: 176px;
+    cursor: pointer;
+}
+.gallary .gallary-image .gallary-five {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 207px;
+    right: 60px;
+    cursor: pointer;
+    transform: rotate(10deg)
+}
+.gallary .gallary-image .gallary-six {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 260px;
+    right: 328px;
+    cursor: pointer;
+    transform: rotate(-8deg)
+}
+.gallary .gallary-image .gallary-seven {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 260px;
+    left: 718px;
+    cursor: pointer;
+    transform: rotate(-8deg)
+}
+.gallary .gallary-image .gallary-eight {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 260px;
+    left: 399px;
+    cursor: pointer;
+    transform: rotate(-8deg)
+}
+.gallary .gallary-image .gallary-nine {
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 260px;
+    left: 65px;
+    cursor: pointer;
+    transform: rotate(-8deg)
+}
+.gallary #gallary-popup .modal-image {
+    width: 100%;
+}
+.gallary .gallary-item:hover {
+    filter: brightness(70%);
+}
+/* End Gallary Page */
+
+/* Media Queries */
+@media (max-width: 1680px) {
+    nav.navbar,
+    .header,
+    .about,
+    .courses,
+    .facts,
+    .accomplishments,
+    .footer,
+    .copyright,
+    .team,
+    .contact,
+    .gallary {
+        padding: 0 120px;
+    }
+    .navbar .navbar-nav .nav-link {
+        font-size: 22px;
+    }
+    .header .content p.title {
+        font-size: 56px;
+        line-height: 90px;
+    }
+    .header .content p.article {
+        font-size: 20px;
+        margin-top: 1.8rem;
+    }
+    .header .content ul.list-unstyled li .fa-square-check {
+        width: 25px;
+        height: 25px;
+        color: #33D396;
+    }
+    .header .content ul.list-unstyled li span {
+        font-size: 20px;
+    }
+    .header .content .btn-home {
+        font-size: 24px;
+        padding: 16px;
+    }
+    .header .home-image .parent-image {
+        width: 100%;
+    }
+    .header .content .btn-video {
+        font-size: 24px;
+        padding: 16px;
+    }
+    .about .content p.title,
+    .courses .content p.title,
+    .facts .content p.title,
+    .accomplishments .content p.title,
+    .team .content p.title,
+    .contact .content p.title,
+    .gallary .content p.title {
+        font-size: 35px;
+    }
+    .about .content p.article {
+        font-size: 20px;
+        margin-top: 1.8rem;
+    }
+    .courses .course .course-title a {
+        font-size: 30px;
+    }
+    .courses .course .course-description {
+        height: 90px;
+        font-size: 20px;
+    }
+    .facts .card {
+        font-size: 32px;
+    }
+    .facts .card .cardnumber {
+        font-size: 65px;
+    }
+    .accomplishments .content p.article {
+        margin-top: 1.8rem;
+        font-size: 20px;
+    }
+    .courses .course-content h4 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .courses .points ul li {
+        font-size: 20px;
+    }
+    .footer h5 {
+        font-size: 24px;
+    }
+    .footer .links a {
+        font-size: 18px;
+    }
+    .accomplishments img,
+    .footer img {
+        width: 100%;
+    }
+    .copyright .text-light {
+        font-size: 20px;
+    }
+    form .form-control {
+        font-size: 24px;
+        padding: 16px;
+    }
+    form .btn {
+        font-size: 24px;
+        padding: 10px 30px;
+    }
+
+    .gallary .gallary-image .gallary-one {
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        top: 453px;
+        left: 210px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-two {
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        top: 453px;
+        left: 504px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-three {
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        top: 453px;
+        right: 435px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-four {
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        top: 453px;
+        right: 154px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-five {
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        top: 175px;
+        right: 50px;
+        cursor: pointer;
+        transform: rotate(10deg)
+    }
+    .gallary .gallary-image .gallary-six {
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        top: 222px;
+        right: 284px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-seven {
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        top: 222px;
+        left: 620px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-eight {
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        top: 222px;
+        left: 346px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-nine {
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        top: 222px;
+        left: 54px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+}
+
+@media (max-width: 1440px) {
+    .custom-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    nav.navbar,
+    .header,
+    .about,
+    .courses,
+    .facts,
+    .accomplishments,
+    .footer,
+    .copyright,
+    .team,
+    .contact,
+    .gallary {
+        padding: 0 15px
+    }
+    .navbar .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+    .header .content p.title {
+        font-size: 46px;
+        line-height: 80px;
+    }
+    .header .content p.article {
+        margin-top: 1.6rem;
+    }
+    .header .content .btn-home {
+        font-size: 22px;
+        padding: 14px;
+    }
+    .header .content .btn-video {
+        font-size: 22px;
+        padding: 14px;
+    }
+    .about .about-image .parent-image {
+        width: 100%;
+    }
+    .about .about-image .circle-image {
+        left: -10%
+    }
+    .courses .course .course-title a {
+        font-size: 30px;
+    }
+    .courses .course .course-description {
+        height: 90px;
+        font-size: 20px;
+    }
+    .courses .course .course-details ul li {
+        font-size: 18px !important;
+    }
+    .courses .course .course-details ul li .svg-inline--fa {
+        width: 25px !important;
+        height: 20px !important;
+    }
+    .courses .course .course-details ul li.pe-3 {
+        padding-left: 0.5rem !important;
+    }
+    .courses .course .course-details ul li .fa-user-graduate.pe-1 {
+        padding-left: 0.2rem !important;
+    }
+    .facts .card {
+        font-size: 30px;
+    }
+    .facts .card .cardnumber {
+        font-size: 55px;
+    }
+    .accomplishments img,
+    .footer img {
+        width: 100%;
+    }
+    .footer h5 {
+        font-size: 24px;
+    }
+    .footer .links a {
+        font-size: 18px;
+    }
+    .footer .mapouter {
+        text-align: right;
+        width: 200px;
+    }
+    .copyright .text-light {
+        font-size: 18px;
+    }
+    .footer .p-3 {
+        padding: 0.5rem !important;
+    }
+    form .form-control {
+        font-size: 18px;
+        padding: 16px;
+    }
+    form .btn {
+        font-size: 18px;
+        padding: 8px 26px;
+    }
+
+    .contact .contact-image .center-text {
+        font-size: 28px;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .contact .contact-image .center-text p.title {
+        font-size: 50px;
+    }
+
+    .gallary .gallary-image .gallary-one {
+        width: 202px;
+        height: 202px;
+        position: absolute;
+        top: 443px;
+        left: 204px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-two {
+        width: 202px;
+        height: 202px;
+        position: absolute;
+        top: 443px;
+        left: 491px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-three {
+        width: 202px;
+        height: 202px;
+        position: absolute;
+        top: 443px;
+        right: 425px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-four {
+        width: 202px;
+        height: 202px;
+        position: absolute;
+        top: 443px;
+        right: 147px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-five {
+        width: 202px;
+        height: 202px;
+        position: absolute;
+        top: 173px;
+        right: 45px;
+        cursor: pointer;
+        transform: rotate(10deg)
+    }
+    .gallary .gallary-image .gallary-six {
+        width: 202px;
+        height: 202px;
+        position: absolute;
+        top: 218px;
+        right: 274px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-seven {
+        width: 202px;
+        height: 202px;
+        position: absolute;
+        top: 218px;
+        left: 606px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-eight {
+        width: 202px;
+        height: 202px;
+        position: absolute;
+        top: 218px;
+        left: 336px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-nine {
+        width: 202px;
+        height: 202px;
+        position: absolute;
+        top: 218px;
+        left: 51px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+
+}
+
+@media (max-width: 1326px) {
+    .gallary .gallary-image .gallary-one {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        top: 403px;
+        left: 190px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-two {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        top: 403px;
+        left: 452px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-three {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        top: 403px;
+        right: 392px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-four {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        top: 403px;
+        right: 135px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-five {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        top: 156px;
+        right: 38px;
+        cursor: pointer;
+        transform: rotate(10deg)
+    }
+    .gallary .gallary-image .gallary-six {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        top: 198px;
+        right: 252px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-seven {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        top: 198px;
+        left: 556px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-eight {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        top: 198px;
+        left: 306px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-nine {
+        width: 190px;
+        height: 190px;
+        position: absolute;
+        top: 198px;
+        left: 48px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+}
+
+@media (max-width:1199px) {
+    .navbar-nav.language {
+        flex-direction: row;
+    }
+    .header .content p.title {
+        font-size: 42px;
+        line-height: 80px;
+    }
+    .header .content p.article {
+        margin-top: 1.6rem;
+    }
+    .footer img {
+        width: 70%;
+    }
+    .copyright .text-light {
+        font-size: 16px;
+    }
+
+    .gallary .gallary-image .gallary-one {
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        top: 300px;
+        left: 138px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-two {
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        top: 300px;
+        left: 332px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-three {
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        top: 300px;
+        right: 286px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-four {
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        top: 300px;
+        right: 98px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-five {
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        top: 116px;
+        right: 30px;
+        cursor: pointer;
+        transform: rotate(10deg)
+    }
+    .gallary .gallary-image .gallary-six {
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        top: 148px;
+        right: 186px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-seven {
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        top: 148px;
+        left: 406px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-eight {
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        top: 148px;
+        left: 226px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-nine {
+        width: 142px;
+        height: 142px;
+        position: absolute;
+        top: 148px;
+        left: 36px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+}
+
+@media (max-width:768px) {
+    .about .content p.article ,.header .content p.article{
+        font-size: 18px;
+        margin-top: 1.4rem;
+    }
+    .header .content .btn-home {
+        font-size: 20px;
+        padding: 12px;
+    }
+    .header .content .btn-video {
+        font-size: 20px;
+        padding: 12px;
+    }
+    .header .content ul.list-unstyled li span {
+        font-size: 18px;
+    }
+    .header .content ul.list-unstyled li .fa-square-check {
+        width: 20px;
+        height: 20px;
+    }
+    .footer .mapouter .gmap_canvas {
+        width: 90%;
+        height: auto;
+    }
+    .footer img {
+        width: 50%;
+    }
+    .courses .points ul li {
+        font-size: 16px;
+    }
+    .courses .points .fa-circle {
+        width: 14px;
+        height: 14px;
+    }
+    .header .content p.title,
+    .about .content p.title,
+    .courses .content p.title,
+    .facts .content p.title,
+    .accomplishments .content p.title,
+    .team .content p.title,
+    .contact .content p.title,
+    .gallary .content p.title {
+        font-size: 28px;
+    }
+    .courses .course-content h4 {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+    .courses .course-content .separetor {
+        width: 156px;
+    }
+    
+    .gallary .gallary-image .gallary-one {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 230px;
+        left: 106px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-two {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 230px;
+        left: 255px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-three {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 230px;
+        right: 220px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-four {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 230px;
+        right: 76px;
+        cursor: pointer;
+    }
+    .gallary .gallary-image .gallary-five {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 88px;
+        right: 24px;
+        cursor: pointer;
+        transform: rotate(10deg)
+    }
+    .gallary .gallary-image .gallary-six {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 112px;
+        right: 143px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-seven {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 112px;
+        left: 315px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-eight {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 112px;
+        left: 174px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .gallary .gallary-image .gallary-nine {
+        width: 104px;
+        height: 104px;
+        position: absolute;
+        top: 112px;
+        left: 26px;
+        cursor: pointer;
+        transform: rotate(-8deg)
+    }
+    .contact .contact-image .center-text {
+        font-size: 28px;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .contact .contact-image .center-text p.title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about .content p.article ,.header .content p.article{
+        font-size: 16px;
+        margin-top: 1.2rem;
+    }
+    .header .content ul.list-unstyled li span {
+        font-size: 16px;
+    }
+    .header .content .btn-home {
+        font-size: 20px;
+        padding: 12px;
+    }
+    .header .content .btn-video {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .courses .course .course-details ul li .svg-inline--fa.pe-5 {
+        padding-right: 1.25rem !important;
+    }
+
+    .gallary .gallary-image .parent-image,
+    .gallary .gallary-image .child-image {
+        display: none;
+    }
+    .gallary .gallary-image .gallary-item {
+        width: fit-content;
+        position: static;
+        transform: rotate(0);
+        padding: 10px;
+    }
+}
+
+/*small*/
+@media (min-width: 768px) {
+    .custom-container {
+        width: 750px;
+    }
+}
+
+/*medium */
+@media (min-width: 992px) {
+    .custom-container {
+        width: 970px;
+    }
+}
+
+/* large*/
+@media (min-width: 1200px) {
+    .custom-container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 1439px) {
+    .custom-container {
+        width: auto;
+    }
+}
